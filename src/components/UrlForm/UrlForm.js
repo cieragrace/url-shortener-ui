@@ -16,34 +16,6 @@ class UrlForm extends Component {
     this.setState({ [e.target.name]: e.target.value });
   }
 
-  // postUrl = () => {
-  //   const titleInput = this.state.title
-  //   const urlInput = this.state.urlToShorten
-  //   if(titleInput && urlInput) {
-  //     const newURL = {
-  //       'long_url': urlInput,
-  //       'title': titleInput
-  //     }
-  //     updateAPI(newURL)
-  //     .then(result => {
-  //       console.log(result)
-  //     })
-  //     .catch(error => {
-  //       console.log(error)
-  //     })
-  //   }
-  // }
-
-  // handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   this.clearInputs();
-  //   this.postUrl()
-  // }
-
-  // clearInputs = () => {
-  //   this.setState({title: '', urlToShorten: ''});
-  // }
-
   handleSubmit = (e) => {
     e.preventDefault();
     const newURL = {
