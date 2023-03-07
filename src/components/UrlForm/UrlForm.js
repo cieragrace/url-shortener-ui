@@ -33,6 +33,7 @@ class UrlForm extends Component {
         })
         .catch(error => {
           console.log(error)
+          alert("Sorry, there seems to have been an error, try again")
     })
   }
 
