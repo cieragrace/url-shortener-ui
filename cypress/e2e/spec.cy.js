@@ -2,7 +2,7 @@ export {}
 
 describe('Home Page spec', () => {
   beforeEach(() => {
-    cy.intercept('GET', 'http://localhost:3001/api/v1/urls', {fixture: '../fixtures/example.json'})
+    cy.intercept('GET', 'http://localhost:3001/api/v1/urls', {fixture: '../fixtures/HomePage.json'})
     cy.visit('http://localhost:3000/')
   })
   it('should show a user the page title', () => {
